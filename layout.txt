@@ -1,0 +1,11 @@
+primary fxml file:
+	-lists health goals
+	-displays streak
+	-displays "enter daily health information" button (switches to enter daily information)
+enter goals fxml file:
+	-prompts for health goals (with drop-down for units and over/under)
+	-has a "enter another goal" and "done" button (switches to enter goals fxml file and primary fxml file respectively)
+enter daily health information fxml file:
+	-prompts for a number
+	-displays label based on health goals (for example, it will say "enter calories" if someone has a calorie goal)
+	-displays a "next" button (switches to enter daily information fxml file if there is info for goals left unentered, if all info has been entered, switches to primary fxml file)
