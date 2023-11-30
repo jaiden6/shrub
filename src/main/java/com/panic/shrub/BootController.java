@@ -7,6 +7,6 @@ public class BootController {
 
     @FXML
     private void bootToPrimary() throws IOException {
-        App.setRoot("secondary");
+        App.setRoot("primary");
     }
 }
