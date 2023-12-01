@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<<<<<<< Updated upstream
+=======
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+>>>>>>> Stashed changes
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<<<<<<< Updated upstream
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.panic.shrub.BootController">
+=======
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.panic.shrub.BootController">
+>>>>>>> Stashed changes
+   <children>
+      <SplitPane dividerPositions="0.6703755215577191" layoutX="157.0" layoutY="54.0" prefHeight="384.0" prefWidth="576.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane prefHeight="384.0" prefWidth="384.0">
+               <children>
+                  <ImageView fitHeight="384.0" fitWidth="384.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+          <AnchorPane>
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="63.0" layoutY="5.0" text="Journal">
+                     <font>
+                        <Font name="Monospaced Bold" size="14.0" />
+                     </font>
+                  </Label>
+<<<<<<< Updated upstream
+=======
+                  <TextField layoutX="54.0" layoutY="89.0" prefHeight="26.0" prefWidth="76.0" />
+                  <Button layoutX="66.0" layoutY="293.0" mnemonicParsing="false" onAction="#bootToPrimary" text="Done" />
+                  <Label layoutX="77.0" layoutY="45.0" text="Boot" />
+>>>>>>> Stashed changes
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

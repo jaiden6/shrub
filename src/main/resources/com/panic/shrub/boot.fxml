@@ -32,11 +32,11 @@
                         <Font name="Monospaced Bold" size="14.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="54.0" layoutY="138.0" prefHeight="26.0" prefWidth="76.0" />
-                  <Button layoutX="68.0" layoutY="296.0" mnemonicParsing="false" onAction="#bootToPrimary" text="Done" />
-                  <ChoiceBox layoutX="51.0" layoutY="35.0" prefHeight="31.0" prefWidth="82.0" />
-                  <ChoiceBox layoutX="54.0" layoutY="85.0" prefHeight="31.0" prefWidth="76.0" />
-                  <Button layoutX="43.0" layoutY="248.0" mnemonicParsing="false" onAction="#bootToBoot" text="Add Another" />
+                  <TextField layoutX="54.0" layoutY="97.0" prefHeight="31.0" prefWidth="76.0" />
+                  <Button layoutX="64.0" layoutY="274.0" mnemonicParsing="false" onAction="#bootToPrimary" text="Done" />
+                  <ChoiceBox fx:id="cb1" layoutX="51.0" layoutY="45.0" prefHeight="31.0" prefWidth="82.0" AnchorPane.topAnchor="45.0" />
+                  <ChoiceBox fx:id="cb2" layoutX="54.0" layoutY="149.0" prefHeight="31.0" prefWidth="76.0" />
+                  <Button layoutX="39.0" layoutY="218.0" mnemonicParsing="false" onAction="#bootToBoot" text="Add Another" />
                </children></AnchorPane>
         </items>
       </SplitPane>
