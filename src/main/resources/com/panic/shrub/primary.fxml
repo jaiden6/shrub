@@ -48,7 +48,10 @@
                         <Font name="Monospaced Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label fx:id="healthtarget3" layoutX="52.0" layoutY="106.0" text="healthtarget3" />
+                  <Label fx:id="healthtarget3" layoutX="52.0" layoutY="106.0" text="healthtarget3">
+                     <font>
+                        <Font name="Monospaced Bold" size="14.0" />
+                     </font></Label>
                </children></AnchorPane>
         </items>
       </SplitPane>
