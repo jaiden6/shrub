@@ -9,4 +9,9 @@ public class BootController {
     private void bootToPrimary() throws IOException {
         App.setRoot("primary");
     }
+    
+    @FXML
+    private void bootToBoot() throws IOException {
+        App.setRoot("boot");
+    }
 }
