@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.panic.shrub.BootController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.panic.shrub.PrimaryController">
    <children>
       <SplitPane dividerPositions="0.6703755215577191" layoutX="157.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="576.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -27,16 +27,12 @@
                </children></AnchorPane>
           <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="192.0" SplitPane.resizableWithParent="false">
                <children>
-                  <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="16.0" layoutY="5.0" text="Enter health goal:">
+                  <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="44.0" layoutY="44.0" text="Health Goals">
                      <font>
                         <Font name="Monospaced Bold" size="14.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="54.0" layoutY="97.0" prefHeight="31.0" prefWidth="76.0" />
-                  <Button layoutX="64.0" layoutY="274.0" mnemonicParsing="false" onAction="#bootToPrimary" text="Done" />
-                  <ChoiceBox fx:id="cb1" layoutX="51.0" layoutY="45.0" prefHeight="31.0" prefWidth="82.0" AnchorPane.topAnchor="45.0" />
-                  <ChoiceBox fx:id="cb2" layoutX="54.0" layoutY="149.0" prefHeight="31.0" prefWidth="76.0" />
-                  <Button layoutX="39.0" layoutY="218.0" mnemonicParsing="false" onAction="#bootToBoot" text="Add Another" />
+                  <Button layoutX="67.0" layoutY="192.0" mnemonicParsing="false" onAction="#switchToSecondary" text="Done" />
                </children></AnchorPane>
         </items>
       </SplitPane>
