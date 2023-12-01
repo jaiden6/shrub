@@ -13,7 +13,6 @@ public class BootController implements Initializable{
     
     private void bootToPrimary() throws IOException {
         App.setRoot("primary");
-<<<<<<< Updated upstream
     }
     
     @FXML
@@ -36,8 +35,6 @@ public class BootController implements Initializable{
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         cb1.getItems().addAll(overunder);
-=======
        
->>>>>>> Stashed changes
     }
 }
