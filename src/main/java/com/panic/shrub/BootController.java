@@ -16,31 +16,32 @@ public class BootController implements Initializable{
     }
     
     @FXML
-    private ChoiceBox<String> cb1;
+    private ChoiceBox<String> bootOverUnder;
     
     @FXML
-    private ChoiceBox<String> cb2;
+    private ChoiceBox<String> bootUnit;
     
     private String[] overunder = {"over","under"};
-    private String[] units = {"calories","g of fat","g of protein","g of fiber","g of sugar","hours", "oz of water"};
+    private String[] units = {"calories","g of fat","g of protein","g of fiber","g of sugar","hours of exercise", "oz of water"};
     
 
     public void initialize(){
         
-        cb1.getItems().addAll(overunder);
-        cb2.getItems().addAll(units);
+        bootOverUnder.getItems().addAll(overunder);
+        bootUnit.getItems().addAll(units);
         
     }
     
     @FXML
     private void bootToBoot() throws IOException {
         App.setRoot("boot");
+        
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        cb1.getItems().addAll(overunder);
-        cb2.getItems().addAll(units);
+        bootOverUnder.getItems().addAll(overunder);
+        bootUnit.getItems().addAll(units);
        
     }
 }
