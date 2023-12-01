@@ -10,7 +10,7 @@ import javafx.scene.control.ChoiceBox;
 public class BootController implements Initializable{
 
 
-    
+    @FXML
     private void bootToPrimary() throws IOException {
         App.setRoot("primary");
     }
