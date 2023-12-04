@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.io.File;
 
 import java.io.IOException;
 
@@ -17,7 +18,11 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("boot"), 576, 384);
+        if(new File("goals.sav").exists()) { 
+            scene = new Scene(loadFXML("primary"), 576, 384);
+        }else{
+            scene = new Scene(loadFXML("boot"), 576, 384);
+        }
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

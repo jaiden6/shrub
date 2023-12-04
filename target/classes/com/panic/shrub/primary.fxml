@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.panic.shrub.PrimaryController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.panic.shrub.PrimaryController">
    <children>
       <SplitPane dividerPositions="0.6703755215577191" layoutX="157.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="576.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -24,31 +18,35 @@
                      <image>
                         <Image url="@background.png" />
                      </image></ImageView>
+                  <ImageView fitHeight="448.0" fitWidth="448.0" layoutX="-32.0" layoutY="-118.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@0.png" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
           <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="192.0" SplitPane.resizableWithParent="false">
                <children>
-                  <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="16.0" layoutY="44.0" text="Top 3 Health Goals:">
+                  <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutX="-2.0" prefWidth="192.0" text="Daily Health Goals:">
                      <font>
                         <Font name="Monospaced Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Button fx:id="streak" layoutX="67.0" layoutY="192.0" mnemonicParsing="false" onAction="#switchToSecondary" text="Done" />
-                  <Label layoutX="65.0" layoutY="141.0" text="Streak:">
+                  <Button layoutX="72.0" layoutY="357.0" mnemonicParsing="false" onAction="#switchToSecondary" text="Next" />
+                  <Label fx:id="streakLabel" alignment="TOP_CENTER" layoutY="339.0" prefWidth="192.0">
                      <font>
                         <Font name="Monospaced Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label fx:id="healthtarget1" layoutX="50.0" layoutY="72.0" text="healthtarget1">
+                  <Label fx:id="healthTargets" alignment="TOP_CENTER" layoutX="-2.0" layoutY="18.0" prefWidth="192.0">
+                     <font>
+                        <Font name="Monospaced Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="-2.0" layoutY="321.0" prefWidth="192.0" text="Streak:">
                      <font>
                         <Font name="Monospaced Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label fx:id="healthtarget2" layoutX="50.0" layoutY="89.0" text="healthtarget2">
-                     <font>
-                        <Font name="Monospaced Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="healthtarget3" layoutX="52.0" layoutY="106.0" text="healthtarget3" />
                </children></AnchorPane>
         </items>
       </SplitPane>
